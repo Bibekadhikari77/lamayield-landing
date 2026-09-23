@@ -101,7 +101,11 @@ export const WHY_US = {
       body: "Quality in software development comes from truly understanding the client's niche, industry and specifics. In doing so, we strive to intentionally act with the client at core.",
       image: "/img/Lama/why-us-1.png",
     },
-    { title: "Customer Centricity", body: "", image: "/img/Lama/why-us-2.png" },
+    {
+      title: "Customer Centricity",
+      body: "We put our clients at the heart of every decision, listening closely, communicating openly and shaping each solution around your goals so every project delivers real value.",
+      image: "/img/Lama/why-us-2.png",
+    },
   ],
 };
 

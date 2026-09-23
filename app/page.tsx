@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowDots } from "@/components/arrow-dots";
 import { ButtonPrimary } from "@/components/button-primary";
+import { CountUp } from "@/components/count-up";
 import { DotPattern } from "@/components/dot-pattern";
 import { Eyebrow } from "@/components/eyebrow";
 import { Faq } from "@/components/faq";
@@ -125,7 +126,7 @@ export default function Home() {
                 <div key={metric.label} className="flex items-start gap-5">
                   <ArrowDots className="mt-1.5 shrink-0 text-accent" />
                   <div className="flex w-[221px] max-w-full flex-col gap-[5px]">
-                    <dt className="font-num text-5xl font-medium text-snow">{metric.value}</dt>
+                    <CountUp value={metric.value} className="font-num text-5xl font-medium text-snow" />
                     <dd className="text-light text-mist">{metric.label}</dd>
                   </div>
                 </div>

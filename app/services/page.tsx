@@ -65,15 +65,15 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-8 sm:grid-cols-2">
             {SERVICES.map((service, i) => {
               // An odd card out sits centred on its own row at the same width.
               const last = i === SERVICES.length - 1 && SERVICES.length % 2 === 1;
               return (
                 <article
                   key={service.title}
-                  className={`flex flex-col gap-6 bg-void p-8 lg:p-10 ${
-                    last ? "sm:col-span-2 sm:w-[calc(50%-0.5rem)] sm:justify-self-center" : ""
+                  className={`flex flex-col gap-6 bg-void p-8 ring-1 ring-accent shadow-[0_0_40px_6px_rgba(59,130,246,0.45)] lg:p-10 ${
+                    last ? "sm:col-span-2 sm:w-[calc(50%-1rem)] sm:justify-self-center" : ""
                   }`}
                 >
                   <div className="relative mx-auto aspect-square w-full max-w-[300px]">
@@ -101,23 +101,23 @@ export default function ServicesPage() {
       {/* ----------------------------------------------------- Framework */}
       <section className="relative overflow-hidden bg-ink py-[120px]">
         <div className="container-page relative z-10 flex flex-col gap-16">
-          <div className="flex flex-col gap-8 lg:flex-row lg:gap-16">
-            <h2 className="text-h1 text-snow lg:w-[45%]">
-              Transforming Businesses with
-              <br />
-              Cutting-Edge Solutions
+          {/* Centred like the footer CTA band */}
+          <div className="flex flex-col items-center gap-8 text-center">
+            <h2 className="text-h2 max-w-[760px] text-balance text-snow">
+              Transforming Businesses with Cutting&#8209;Edge Solutions
             </h2>
-            <div className="flex flex-1 flex-col gap-6">
-              <p className="text-h4 text-mist">
-                We offer extensive expertise through our proprietary framework called
-                Business Driven Architecture. This framework empowers us to deliver
-                comprehensive solutions in process and development, establishing the basis
-                for our leadership across a wide range of Microsoft technologies.
+            <div className="flex max-w-[680px] flex-col gap-4">
+              <p className="text-light text-mist">
+                We bring deep expertise through a delivery approach built around your
+                business goals. Every engagement starts with understanding how you work,
+                then combines AI, automation and modern engineering to design solutions
+                that fit your processes and scale with you.
               </p>
-              <p className="text-h4 text-mist">
-                Our capabilities span from CRM and ERP to Low-code/No-code development,
-                Azure cloud platform, security, as well as the implementation and
-                maintenance of crucial IT solutions.
+              <p className="text-light text-mist">
+                Our capabilities span AI assistants and workflow automation, custom
+                software and system integrations, cloud platforms and blockchain, along
+                with the security, implementation and ongoing support that keep your
+                critical systems running.
               </p>
             </div>
           </div>

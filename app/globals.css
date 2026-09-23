@@ -246,18 +246,30 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 /* Homepage hero and metrics dimensions from the published Framer reference. */
-.home-metrics .container-page { padding-inline: 0; }
-.metrics-content { padding: 120px 32px 120px 0; }
-.metrics-heading { width: 50%; max-width: 640px; gap: 0; padding-top: 5px; }
+/* Content on the left, globe in its own column on the right (stacked below on smaller screens). */
+.home-metrics .container-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  padding-inline: 0;
+}
+.metrics-content { width: 100%; padding: 0 32px 0 0; }
+.metrics-heading { width: 100%; max-width: 640px; gap: 0; padding-top: 5px; }
 .home-metrics .metrics-globe {
-  position: absolute;
-  width: 724px;
-  height: 711px;
-  top: 50.0824%;
-  right: -75px;
-  transform: translateY(-50%);
+  order: 1;
+  flex: none;
+  width: 620px;
+  max-width: 90vw;
+  aspect-ratio: 1;
 }
 .metrics-list > div { flex: none; }
+@media (min-width: 1024px) {
+  .home-metrics .container-page { flex-direction: row; justify-content: space-between; }
+  .metrics-content { flex: 1; min-width: 0; }
+  .metrics-list > div > div { width: auto; }
+  .metrics-list { width: 100%; gap: 24px; }
+}
 @media (min-width: 1440px) {
   .home-hero { height: 100vh; min-height: 0; }
 }
@@ -269,7 +281,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .metrics-content { padding: 0 30px; }
   .metrics-heading { width: 70%; }
   .metrics-list { flex-wrap: wrap; }
-  .home-metrics .metrics-globe { width: 590px; height: 579px; top: 50%; right: -206px; }
+  .home-metrics .metrics-globe { width: 520px; }
 }
 @media (max-width: 809px) {
   .home-page > .home-metrics { padding: 60px 0 120px; }
@@ -277,5 +289,5 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .metrics-content { padding: 0 20px; }
   .metrics-heading { width: 100%; }
   .metrics-list { flex-direction: column; gap: 24px; }
-  .home-metrics .metrics-globe { width: 404px; height: 397px; top: 62.6786%; right: -213px; }
+  .home-metrics .metrics-globe { width: 360px; }
 }

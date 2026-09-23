@@ -1,4 +1,5 @@
 import { ArrowDots } from "./arrow-dots";
+import { CountUp } from "./count-up";
 import { GROWTH_STATS } from "@/lib/content";
 
 export function GrowthStats() {
@@ -8,7 +9,7 @@ export function GrowthStats() {
         <div key={stat.label} className="flex items-start gap-5">
           <ArrowDots className="mt-1.5 shrink-0 text-accent" />
           <div className="flex flex-col gap-[5px]">
-            <dt className="font-num text-5xl font-medium text-snow">{stat.value}</dt>
+            <CountUp value={stat.value} className="font-num text-5xl font-medium text-snow" />
             <dd className="text-light text-mist">{stat.label}</dd>
           </div>
         </div>

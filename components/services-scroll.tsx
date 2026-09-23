@@ -77,7 +77,7 @@ export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
             return (
               <article
                 key={card.title}
-                className="absolute inset-0 overflow-hidden bg-void ring-1 ring-line"
+                className="absolute inset-0 overflow-hidden bg-void ring-1 ring-accent shadow-[0_0_40px_6px_rgba(59,130,246,0.45)]"
                 style={{
                   opacity: local,
                   transform: `translateY(${(1 - local) * 110}vh) rotate(${tilt * local}deg)`,
