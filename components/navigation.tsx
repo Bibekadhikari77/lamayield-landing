@@ -92,7 +92,7 @@ export function Navigation() {
             onClick={() => setMenuOpen(false)}
             className="mt-2 flex items-center justify-center rounded-[50px] bg-cream px-5 py-3 font-medium text-[rgb(25,25,26)]"
           >
-            Get template
+            Get in touch
           </Link>
         </div>
       )}

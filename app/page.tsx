@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------- Metrics */}
-      <section className="home-metrics relative overflow-hidden py-[120px]">
+      <section className="home-metrics relative overflow-clip py-[120px]">
         <div className="container-page relative">
           <Globe className="metrics-globe" />
 

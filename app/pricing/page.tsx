@@ -76,7 +76,8 @@ export default function PricingPage() {
             />
           </div>
 
-          <div className="overflow-x-auto">
+          {/* relative keeps positioned cells inside the scroller on mobile */}
+          <div className="relative overflow-x-auto">
             <table className="w-full min-w-[680px] border-collapse text-left">
               <thead>
                 <tr className="border-b border-line">
