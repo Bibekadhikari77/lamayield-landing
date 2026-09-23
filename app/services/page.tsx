@@ -34,6 +34,11 @@ const SERVICES = [
     body: "The tools you already use, made smarter. We connect AI directly into your stack.",
     image: "/img/Lama/service-ai-tools.png",
   },
+  {
+    title: "Blockchain Development",
+    body: "We build secure blockchain solutions, from smart contracts and tokenization to decentralized apps, that bring transparency and trust to your business.",
+    image: "/img/Lama/service-blockchain.svg",
+  },
 ];
 
 export default function ServicesPage() {
@@ -61,23 +66,32 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {SERVICES.map((service) => (
-              <article key={service.title} className="flex flex-col gap-6 bg-void p-8 lg:p-10">
-                <div className="relative mx-auto aspect-square w-full max-w-[300px]">
-                  <Image
-                    src={service.image}
-                    alt=""
-                    fill
-                    sizes="300px"
-                    className="object-contain"
-                  />
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h3 className="text-h3 text-snow">{service.title}</h3>
-                  <p className="text-light text-mist">{service.body}</p>
-                </div>
-              </article>
-            ))}
+            {SERVICES.map((service, i) => {
+              // An odd card out sits centred on its own row at the same width.
+              const last = i === SERVICES.length - 1 && SERVICES.length % 2 === 1;
+              return (
+                <article
+                  key={service.title}
+                  className={`flex flex-col gap-6 bg-void p-8 lg:p-10 ${
+                    last ? "sm:col-span-2 sm:w-[calc(50%-0.5rem)] sm:justify-self-center" : ""
+                  }`}
+                >
+                  <div className="relative mx-auto aspect-square w-full max-w-[300px]">
+                    <Image
+                      src={service.image}
+                      alt=""
+                      fill
+                      sizes="300px"
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <h3 className="text-h3 text-snow">{service.title}</h3>
+                    <p className="text-light text-mist">{service.body}</p>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>

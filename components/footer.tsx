@@ -4,7 +4,7 @@ import { DotPattern } from "./dot-pattern";
 import { Logo } from "./logo";
 import { LEGAL_LINKS, NAV_LINKS, SOCIAL_LINKS } from "./site-nav";
 
-// The project's Footer component: a CTA band, the newsletter block and the
+// The project's Footer component: a CTA band, a short company line and the
 // Navigation / Legal / Socials columns.
 export function Footer() {
   return (
@@ -27,34 +27,16 @@ export function Footer() {
           <ButtonPrimary href="/contact">Get in Touch</ButtonPrimary>
         </div>
 
-        {/* Newsletter + link columns */}
+        {/* Company line + link columns */}
         <div className="flex flex-col gap-14 border-t border-line py-16 lg:flex-row lg:justify-between">
           <div className="max-w-sm">
             <Link href="/" aria-label="LamaYield home" className="text-snow">
               <Logo />
             </Link>
 
-            <form className="mt-8">
-              <p className="text-body font-medium text-snow">Newsletter</p>
-              <label htmlFor="newsletter" className="text-body-sm mt-1 block text-dim">
-                Updated you with our services.
-              </label>
-              <div className="mt-4 flex items-center gap-2 rounded-[50px] border border-line p-1.5 focus-within:border-accent/60">
-                <input
-                  id="newsletter"
-                  type="email"
-                  required
-                  placeholder="you@company.com"
-                  className="w-full bg-transparent px-4 py-2 text-base text-snow outline-none placeholder:text-dim"
-                />
-                <button
-                  type="submit"
-                  className="shrink-0 rounded-[50px] bg-cream px-5 py-2 text-base font-medium text-[rgb(25,25,26)] transition-colors hover:bg-[rgb(239,236,228)]"
-                >
-                  Send
-                </button>
-              </div>
-            </form>
+            <p className="text-body-sm mt-6 text-mist/70">
+              AI-powered software that helps businesses work smarter and grow faster.
+            </p>
           </div>
 
           <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:gap-16">

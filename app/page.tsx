@@ -57,8 +57,13 @@ export default function Home() {
       {/* ---------------------------------------------------------- Hero */}
       <section className="home-hero relative flex flex-col overflow-hidden">
         <HeroShader
-          src="/img/Lama/hero-bg.png"
+          src="/img/Lama/hero.jpeg"
           className="absolute inset-x-0 top-0 h-[900px] opacity-90"
+        />
+        {/* Darkens the top of the photo so the navigation stays legible. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 top-0 h-[240px] bg-gradient-to-b from-ink/85 via-ink/40 to-transparent"
         />
         <DotPattern opacity={0.2} />
         <div
@@ -240,7 +245,7 @@ export default function Home() {
 
           <div className="relative h-[527px] w-full overflow-hidden lg:flex-1">
             <Image
-              src="/img/industries-bg.png"
+              src="/img/Lama/img.jpeg"
               alt=""
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

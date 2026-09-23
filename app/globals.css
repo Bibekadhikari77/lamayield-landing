@@ -169,6 +169,11 @@ body {
   gap: 64px;
   padding: 196px 0 120px;
 }
+/* Dark glass so the button stays readable over the hero photo. */
+.home-hero .button-primary {
+  background: rgba(2, 2, 2, .6);
+  backdrop-filter: blur(10px);
+}
 .button-primary {
   position: relative;
   isolation: isolate;

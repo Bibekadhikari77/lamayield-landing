@@ -63,7 +63,7 @@ export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
         />
         <DotPattern opacity={0.14} />
 
-        <h2 className="pointer-events-none absolute font-display text-[clamp(3rem,12vw,10rem)] font-light leading-none tracking-tight text-snow/90">
+        <h2 className="pointer-events-none absolute font-display text-[clamp(2rem,4.5vw,3.75rem)] font-light leading-none tracking-tight text-snow/90">
           Our Services
         </h2>
 
