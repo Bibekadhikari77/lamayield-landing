@@ -9,14 +9,20 @@ export type ServiceCard = { title: string; image: string };
 // Resting rotation of each card in the pile, from the Framer reference.
 const CARD_TILTS = [4, -4, -12, -20];
 
-// Scroll distance each card gets to travel in; larger = slower.
-const SCROLL_PER_CARD = 1200;
+// Height of each scroll trigger block after the pinned section, as in the reference.
+const TRIGGER_HEIGHT = 700;
 
-// The project's sticky "ServicesSection": the headline pins to the viewport
-// while four trigger blocks scroll past, dealing the service cards in one by one.
+// Where a card springs to once its trigger has scrolled fully into view.
+const FLOWN = "translateY(-800px) rotate(-70deg)";
+const SPRING = "transform 600ms cubic-bezier(0.22, 1, 0.36, 1)";
+
+// The reference "Services section": the stack of cards is pinned in view and each
+// trigger block that scrolls past sends the top card flying off; the last one also
+// fades out the headline and glow. Scrolling back up returns them.
 export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
   const wrapRef = useRef<HTMLDivElement>(null);
-  const [progress, setProgress] = useState(0);
+  // Number of triggers that have fully entered the viewport.
+  const [passed, setPassed] = useState(0);
 
   useEffect(() => {
     const wrap = wrapRef.current;
@@ -25,10 +31,8 @@ export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
     let frame = 0;
     const paint = () => {
       frame = 0;
-      const rect = wrap.getBoundingClientRect();
-      const scrollable = rect.height - window.innerHeight;
-      if (scrollable <= 0) return setProgress(1);
-      setProgress(Math.min(1, Math.max(0, -rect.top / scrollable)));
+      const scrolled = -wrap.getBoundingClientRect().top;
+      setPassed(Math.min(cards.length, Math.max(0, Math.floor(scrolled / TRIGGER_HEIGHT))));
     };
 
     const onScroll = () => {
@@ -43,16 +47,20 @@ export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
-  }, []);
+  }, [cards.length]);
+
+  const finished = passed >= cards.length;
+  const fade = { opacity: finished ? 0 : undefined, transition: "opacity 400ms ease" };
 
   return (
-    <div ref={wrapRef} className="relative" style={{ height: `calc(100vh + ${cards.length * SCROLL_PER_CARD}px)` }}>
+    <div ref={wrapRef} className="relative" style={{ height: `calc(100vh + ${cards.length * TRIGGER_HEIGHT}px)` }}>
       <section className="sticky top-0 flex h-screen items-center justify-center overflow-hidden bg-void">
         {/* Light effects behind the headline */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute left-1/2 top-1/2 h-[479px] w-[1026px] max-w-[126vw] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.46]"
           style={{
+            ...fade,
             background:
               "radial-gradient(ellipse at center, rgba(111,155,239,0.45) 0%, rgba(111,155,239,0.12) 45%, transparent 70%)",
           }}
@@ -60,28 +68,30 @@ export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
         <div
           aria-hidden="true"
           className="pointer-events-none absolute left-1/2 top-1/2 h-[519px] w-[1026px] max-w-[110vw] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[rgba(111,155,239,0.24)] opacity-30 blur-[120px]"
+          style={fade}
         />
         <DotPattern opacity={0.14} />
 
-        <h2 className="pointer-events-none absolute font-display text-[clamp(2rem,4.5vw,3.75rem)] font-light leading-none tracking-tight text-snow/90">
+        <h2
+          className="pointer-events-none absolute font-display text-[clamp(2rem,4.5vw,3.75rem)] font-light leading-none tracking-tight text-snow/90"
+          style={fade}
+        >
           Our Services
         </h2>
 
-        {/* The cards pile up in the centre, each landing on top at its own tilt. */}
+        {/* The first card sits on top of the stack and is the first to fly off. */}
         <div className="relative z-10 aspect-[300/380] w-[min(300px,70vw)]">
           {cards.map((card, i) => {
-            // Each card owns its own slice of the scroll and lands before the next moves.
-            const slice = 1 / cards.length;
-            const local = Math.min(1, Math.max(0, (progress - i * slice) / (slice * 0.85)));
             const tilt = CARD_TILTS[i % CARD_TILTS.length];
+            const flown = passed > i;
             return (
               <article
                 key={card.title}
                 className="absolute inset-0 overflow-hidden bg-void ring-1 ring-accent shadow-[0_0_40px_6px_rgba(59,130,246,0.45)]"
                 style={{
-                  opacity: local,
-                  transform: `translateY(${(1 - local) * 110}vh) rotate(${tilt * local}deg)`,
-                  transition: "opacity 120ms linear",
+                  zIndex: cards.length - i,
+                  transform: flown ? FLOWN : `rotate(${tilt}deg)`,
+                  transition: SPRING,
                 }}
               >
                 <Image
