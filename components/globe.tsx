@@ -7,7 +7,6 @@ import { useEffect, useRef } from "react";
 
 const R = 99; // sphere radius in SVG units (viewBox 0 0 200 200)
 const REVOLUTION_SECONDS = 40;
-const AXIAL_TILT_DEG = 23.4; // Earth's tilt, applied to the grid and markers
 
 // Meridians every 30°: each projected ellipse covers a longitude and its opposite.
 const MERIDIANS = [0, 30, 60, 90, 120, 150].map((deg) => (deg * Math.PI) / 180);
@@ -100,52 +99,49 @@ export function Globe({ className = "" }: { className?: string }) {
           }}
         />
 
-        {/* Grid and markers spin together around the tilted axis */}
-        <div className="absolute inset-0" style={{ transform: `rotate(${AXIAL_TILT_DEG}deg)` }}>
-          {/* Wireframe */}
-          <svg viewBox="0 0 200 200" className="absolute inset-0 size-full text-accent/25">
-            <circle cx="100" cy="100" r={R} fill="none" stroke="currentColor" strokeWidth="0.6" />
-            {MERIDIANS.map((lon, i) => (
-              <ellipse
-                key={lon}
-                ref={(el) => {
-                  meridianRefs.current[i] = el;
-                }}
-                cx="100"
-                cy="100"
-                rx={meridianRx(lon, 0).toFixed(2)}
-                ry={R}
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.5"
-              />
-            ))}
-            {[-66, -33, 0, 33, 66].map((dy) => (
-              <ellipse
-                key={dy}
-                cx="100"
-                cy={100 + dy}
-                rx={Math.sqrt(Math.max(0, R * R - dy * dy))}
-                ry="5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.5"
-              />
-            ))}
-          </svg>
-
-          {/* Markers */}
-          {MARKERS.map((marker, i) => (
-            <span
-              key={marker.join()}
+        {/* Wireframe */}
+        <svg viewBox="0 0 200 200" className="absolute inset-0 size-full text-accent/25">
+          <circle cx="100" cy="100" r={R} fill="none" stroke="currentColor" strokeWidth="0.6" />
+          {MERIDIANS.map((lon, i) => (
+            <ellipse
+              key={lon}
               ref={(el) => {
-                markerRefs.current[i] = el;
+                meridianRefs.current[i] = el;
               }}
-              className="absolute size-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-snow shadow-[0_0_8px_2px_rgba(255,255,255,0.6)]"
-              style={markerStyle(marker, 0)}
+              cx="100"
+              cy="100"
+              rx={meridianRx(lon, 0).toFixed(2)}
+              ry={R}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="0.5"
             />
           ))}
-        </div>
+          {[-66, -33, 0, 33, 66].map((dy) => (
+            <ellipse
+              key={dy}
+              cx="100"
+              cy={100 + dy}
+              rx={Math.sqrt(Math.max(0, R * R - dy * dy))}
+              ry="5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="0.5"
+            />
+          ))}
+        </svg>
+
+        {/* Markers */}
+        {MARKERS.map((marker, i) => (
+          <span
+            key={marker.join()}
+            ref={(el) => {
+              markerRefs.current[i] = el;
+            }}
+            className="absolute size-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-snow shadow-[0_0_8px_2px_rgba(255,255,255,0.6)]"
+            style={markerStyle(marker, 0)}
+          />
+        ))}
 
         {/* Terminator */}
         <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_70%_75%,transparent_40%,rgba(0,0,0,0.75)_100%)]" />

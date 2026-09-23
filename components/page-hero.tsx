@@ -24,7 +24,8 @@ export function PageHero({
           height={900}
           priority
           aria-hidden="true"
-          className="pointer-events-none absolute -right-20 top-24 hidden w-[520px] max-w-[45vw] opacity-80 lg:block"
+          // Left edge feathers into the black page background.
+          className="pointer-events-none absolute -right-20 top-24 hidden w-[520px] max-w-[45vw] opacity-80 [mask-image:linear-gradient(to_right,transparent,black_45%)] lg:block"
         />
       )}
       <div

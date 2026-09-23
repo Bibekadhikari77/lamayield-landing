@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { Eyebrow } from "@/components/eyebrow";
 import { Footer } from "@/components/footer";
 import { PageHero } from "@/components/page-hero";
@@ -11,6 +12,10 @@ export const metadata: Metadata = {
   description:
     "At LamaYield, we specialize in providing innovative software solutions and IT services.",
 };
+
+// Pricing is hidden for now: /pricing renders the 404 page. Set to true to bring it back
+// (and uncomment the Pricing link in components/site-nav.ts).
+const PRICING_ENABLED = false;
 
 const TIERS = [
   { name: "Startup", price: "$59/mo" },
@@ -49,6 +54,8 @@ const GROUPS = [
 ];
 
 export default function PricingPage() {
+  if (!PRICING_ENABLED) notFound();
+
   return (
     <>
       <PageHero

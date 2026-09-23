@@ -58,10 +58,10 @@ export default function AboutPage() {
       {/* --------------------------------------------------- How it works */}
       <section className="relative overflow-hidden bg-ink py-[120px]">
         <Image
-          src="/img/Lama/about-lines.png"
+          src="/img/Lama/bg.png"
           alt=""
           width={2170}
-          height={603}
+          height={595}
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-0 z-0 h-auto w-full opacity-50"
         />

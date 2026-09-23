@@ -65,15 +65,15 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2">
             {SERVICES.map((service, i) => {
               // An odd card out sits centred on its own row at the same width.
               const last = i === SERVICES.length - 1 && SERVICES.length % 2 === 1;
               return (
                 <article
                   key={service.title}
-                  className={`flex flex-col gap-6 bg-void p-8 ring-1 ring-accent shadow-[0_0_40px_6px_rgba(59,130,246,0.45)] lg:p-10 ${
-                    last ? "sm:col-span-2 sm:w-[calc(50%-1rem)] sm:justify-self-center" : ""
+                  className={`flex flex-col gap-6 bg-void p-8 lg:p-10 ${
+                    last ? "sm:col-span-2 sm:w-[calc(50%-0.5rem)] sm:justify-self-center" : ""
                   }`}
                 >
                   <div className="relative mx-auto aspect-square w-full max-w-[300px]">

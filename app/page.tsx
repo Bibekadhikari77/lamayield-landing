@@ -271,10 +271,10 @@ export default function Home() {
       {/* ---------------------------------------------------------- About */}
       <section className="relative overflow-hidden bg-void py-[120px]">
         <Image
-          src="/img/Lama/about-lines.png"
+          src="/img/Lama/bg.png"
           alt=""
           width={2170}
-          height={603}
+          height={595}
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-[125px] z-0 h-auto w-full opacity-60"
         />
