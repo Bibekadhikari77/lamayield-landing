@@ -21,7 +21,7 @@ export function PartnerCard() {
       <div className="flex flex-col items-stretch gap-[30px] lg:flex-row">
         <div className="relative flex h-[370px] w-full shrink-0 items-center justify-center overflow-hidden lg:w-[300px]">
           <Image
-            src="/img/testimonial-photo.png"
+            src="/img/Lama/testimonial-photo.png"
             alt=""
             fill
             sizes="300px"

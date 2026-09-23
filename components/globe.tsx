@@ -23,7 +23,7 @@ export function Globe({ className = "" }: { className?: string }) {
           className="absolute inset-0 rounded-full"
           style={{
             background:
-              "radial-gradient(circle at 32% 28%, rgba(60,208,119,0.55) 0%, rgba(60,208,119,0.12) 38%, rgba(2,15,7,0.85) 68%, rgb(2,2,2) 100%)",
+              "radial-gradient(circle at 32% 28%, rgba(111,155,239,0.55) 0%, rgba(111,155,239,0.12) 38%, rgba(3,8,20,0.85) 68%, rgb(2,2,2) 100%)",
           }}
         />
 

@@ -29,11 +29,11 @@ const clash = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Softgent — Technical leadership and delivery of quality software",
-    template: "%s — Softgent",
+    default: "LamaYield — Technical leadership and delivery of quality software",
+    template: "%s — LamaYield",
   },
   description:
-    "Softgent provides technical leadership and delivery of quality software, from architecture and integrations through to machine learning.",
+    "LamaYield provides technical leadership and delivery of quality software, from architecture and integrations through to machine learning.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

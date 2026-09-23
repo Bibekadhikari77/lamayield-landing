@@ -9,7 +9,7 @@ import { ScrollRevealText } from "@/components/scroll-reveal-text";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "At Softgent, we specialize in providing innovative software solutions and IT services.",
+    "At LamaYield, we specialize in providing innovative software solutions and IT services.",
 };
 
 const TIERS = [
@@ -54,8 +54,8 @@ export default function PricingPage() {
       <PageHero
         label="Pricing"
         title="Straightforward Costing designed to grow"
-        lead="At Softgent, we specialize in providing innovative software solutions and IT services."
-        image="/img/pricing-hero.png"
+        lead="At LamaYield, we specialize in providing innovative software solutions and IT services."
+        image="/img/Lama/pricing-hero.png"
       />
 
       <section className="bg-ink py-[120px]">

@@ -48,12 +48,12 @@ export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
           className="pointer-events-none absolute left-1/2 top-1/2 h-[479px] w-[1026px] max-w-[126vw] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.46]"
           style={{
             background:
-              "radial-gradient(ellipse at center, rgba(60,208,119,0.45) 0%, rgba(60,208,119,0.12) 45%, transparent 70%)",
+              "radial-gradient(ellipse at center, rgba(111,155,239,0.45) 0%, rgba(111,155,239,0.12) 45%, transparent 70%)",
           }}
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute left-1/2 top-1/2 h-[519px] w-[1026px] max-w-[110vw] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[rgba(60,208,119,0.24)] opacity-30 blur-[120px]"
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[519px] w-[1026px] max-w-[110vw] -translate-x-1/2 -translate-y-1/2 rounded-[50%] bg-[rgba(111,155,239,0.24)] opacity-30 blur-[120px]"
         />
         <DotPattern opacity={0.14} />
 

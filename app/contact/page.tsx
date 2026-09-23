@@ -17,17 +17,17 @@ const STEPS = [
   {
     title: "Identify",
     body: "We works to clearly define the problem within the context of the broader system, understanding constraints, data, dependencies, and real world pressures before anything is built.",
-    image: "/img/approach-identify.png",
+    image: "/img/Lama/approach-identify.png",
   },
   {
     title: "Solution",
     body: "An experienced team designs and delivers the solution end to end, from architecture through to integrations ensuring it works within existing systems and real operating conditions.",
-    image: "/img/approach-solution.png",
+    image: "/img/Lama/approach-solution.png",
   },
   {
     title: "Outcome",
     body: "We ensure the solution delivers measurable results in the real world, optimising, iterating, and embedding it into operations so value is realised and sustained.",
-    image: "/img/approach-outcome.png",
+    image: "/img/Lama/approach-outcome.png",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ContactPage() {
         label="Contact"
         title="Get in touch for any support and inquiries"
         lead="We're all ears! Talk to us about your needs, and we'll provide the best possible solution."
-        image="/img/contact-hero.png"
+        image="/img/Lama/contact-hero.png"
       />
 
       {/* --------------------------------------------------- Get in touch */}

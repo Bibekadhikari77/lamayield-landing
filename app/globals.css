@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------
-   Design tokens mirrored from the Softgent Framer project styles
+   Design tokens mirrored from the LamaYield Framer project styles
    --------------------------------------------------------------- */
 @theme inline {
   /* Color styles */
@@ -12,7 +12,8 @@
   --color-mist: rgb(213, 212, 214);     /* Neutral 02 */
   --color-dim: rgb(125, 124, 124);      /* Neutral · 500 */
   --color-faint: rgb(140, 140, 140);    /* Neutral · 400 */
-  --color-accent: rgb(60, 208, 119);    /* Color Secondary */
+  /*--color-accent: rgb(60, 208, 119);    /* Color Secondary */
+  --color-accent: #6f9bef;    /* Color Secondary */
   --color-brand: rgb(242, 65, 0);       /* Brand */
   --color-line: rgba(248, 248, 243, 0.1);
   --color-hairline: rgb(221, 221, 221); /* Neutral · 300 */
@@ -188,7 +189,7 @@ body {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: radial-gradient(42.6% 50% at 50% 100%, rgba(60, 208, 119, .35), transparent);
+  background: radial-gradient(42.6% 50% at 50% 100%, rgba(111, 155, 239, .35), transparent);
 }
 .button-primary::after {
   content: "";

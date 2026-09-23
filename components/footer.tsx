@@ -19,11 +19,10 @@ export function Footer() {
         {/* CTA band */}
         <div className="flex flex-col items-center gap-8 py-[120px] text-center">
           <h2 className="text-h2 max-w-[820px] text-snow">
-            Softgent has the full types of potential for your start-up business.
+           Build smarter. Move faster. Grow further.
           </h2>
           <p className="text-light max-w-[620px] text-mist">
-            Softgent helps teams build chatbots, voice agents, and workflow automations -
-            all in one intelligent platform.
+            LamaYield combines AI, automation, and modern software engineering to transform ambitious ideas into practical digital solutions.
           </p>
           <ButtonPrimary href="/contact">Get in Touch</ButtonPrimary>
         </div>
@@ -31,7 +30,7 @@ export function Footer() {
         {/* Newsletter + link columns */}
         <div className="flex flex-col gap-14 border-t border-line py-16 lg:flex-row lg:justify-between">
           <div className="max-w-sm">
-            <Link href="/" aria-label="Softgent home" className="text-snow">
+            <Link href="/" aria-label="LamaYield home" className="text-snow">
               <Logo />
             </Link>
 
@@ -86,8 +85,16 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col-reverse items-start justify-between gap-4 border-t border-line py-8 sm:flex-row sm:items-center">
-          <p className="text-body-sm text-dim">©2026 Softgent.</p>
-          <p className="text-body-sm text-dim">Built in Framer</p>
+          <p className="text-body-sm text-dim">©2026 LamaYield.</p>
+          <p className="text-body-sm flex items-center gap-3 text-dim">
+            <Link href="/privacy-policy" className="transition-colors hover:text-accent">
+              Privacy policy
+            </Link>
+            <span aria-hidden="true">|</span>
+            <Link href="/terms-of-use" className="transition-colors hover:text-accent">
+              Terms of use
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

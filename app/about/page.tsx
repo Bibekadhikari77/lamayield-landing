@@ -10,14 +10,14 @@ import { WhyChooseUs } from "@/components/why-choose-us";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "At Softgent, we specialize in providing innovative software solutions and IT services.",
+    "At LamaYield, we specialize in providing innovative software solutions and IT services.",
 };
 
 const HOW_IT_WORKS = [
   {
     no: "01.",
     title: "Efficiency",
-    body: "Designed for your team, see for yourself and manage your time with Softgent.",
+    body: "Designed for your team, see for yourself and manage your time with LamaYield.",
   },
   {
     no: "02.",
@@ -51,14 +51,14 @@ export default function AboutPage() {
       <PageHero
         label="About us"
         title="Empowering Businesses Through Technology"
-        lead="At Softgent, we specialize in providing innovative software solutions and IT services."
+        lead="At LamaYield, we specialize in providing innovative software solutions and IT services."
         image="/img/about-hero.png"
       />
 
       {/* --------------------------------------------------- How it works */}
       <section className="relative overflow-hidden bg-ink py-[120px]">
         <Image
-          src="/img/about-lines.png"
+          src="/img/Lama/about-lines.png"
           alt=""
           width={1440}
           height={402}
@@ -76,7 +76,7 @@ export default function AboutPage() {
               />
             </div>
             <p className="text-h4 flex-1 text-mist">
-              At Softgent, we specialize in providing innovative software solutions that
+              At LamaYield, we specialize in providing innovative software solutions that
               empower businesses to streamline operations, enhance productivity, and
               achieve their goals efficiently.
             </p>

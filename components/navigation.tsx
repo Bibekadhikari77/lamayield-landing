@@ -28,7 +28,7 @@ export function Navigation() {
             : "border-transparent"
         }`}
       >
-        <Link href="/" aria-label="Softgent home" className="text-snow">
+        <Link href="/" aria-label="LamaYield home" className="text-snow">
           <Logo />
         </Link>
 
@@ -52,7 +52,7 @@ export function Navigation() {
 
         <div className="flex items-center gap-2">
           <div className="hidden sm:block">
-            <ButtonPrimary href="/contact">Get template</ButtonPrimary>
+            <ButtonPrimary href="/contact">Get IN Touch</ButtonPrimary>
           </div>
           <button
             type="button"

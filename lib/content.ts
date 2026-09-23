@@ -2,10 +2,9 @@ import type { FaqItem } from "@/components/faq";
 import type { ServiceCard } from "@/components/services-scroll";
 
 export const METRICS = [
-  { value: "12", label: "Years of Experience" },
-  { value: "50+", label: "Countries in Services" },
-  { value: "80%", label: "Increase in Productivity" },
-  { value: "$124B", label: "Revenue Generated" },
+  { value: "25+", label: "Years of Experience" },
+  { value: "500+", label: "Successful Projects" },
+  { value: "100%", label: "Accomplish Mission" },
 ];
 
 // Client wordmarks lifted from the published hero ticker.
@@ -18,20 +17,20 @@ export const PARTNER_LOGOS = [
 ];
 
 export const INDUSTRIES = [
-  "Generative AI Integration",
-  "Cognitive Commerce",
-  "Energy & Climate",
-  "Secure FinTech Ecosystems",
-  "Digital Healthcare",
-  "Software & Cloud Computing",
+  "Generative AI",
+  "AI Agents & Automation",
+  "Machine Learning",
+  "FinTech",
+  "Healthcare AI",
+  "Cloud & Software",
   "Retail & E-commerce",
 ];
 
 export const SERVICE_CARDS: ServiceCard[] = [
-  { title: "Workflow Automation", image: "/img/service-automation.png" },
-  { title: "AI Assistants & Copilots", image: "/img/service-copilots.png" },
-  { title: "Business consulting", image: "/img/service-consulting.png" },
-  { title: "AI & Tools Integration", image: "/img/service-ai-tools.png" },
+  { title: "Workflow Automation", image: "/img/Lama/service-automation.png" },
+  { title: "AI Assistants & Copilots", image: "/img/Lama/service-copilots.png" },
+  { title: "Business consulting", image: "/img/Lama/service-consulting.png" },
+  { title: "AI & Tools Integration", image: "/img/Lama/service-ai-tools.png" },
 ];
 
 // The two slides in the featured partner card.
@@ -45,12 +44,12 @@ export const PARTNER_AUTHOR = { name: "Mike Green", role: "Director of Operation
 export const TESTIMONIALS = [
   {
     quote:
-      "Softgent has been an amazing investment partner for me. Their investment management services are easy to use.",
+      "LamaYield has been an amazing investment partner for me. Their investment management services are easy to use.",
     handle: "@ Yury",
   },
   {
     quote:
-      "I never realized how much money I was wasting on unnecessary expenses until I started using Softgent.",
+      "I never realized how much money I was wasting on unnecessary expenses until I started using LamaYield.",
     handle: "@Aryan",
   },
   {
@@ -59,36 +58,36 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "I accidentally stumbled upon Softgent while looking for another tool but I am very glad I did!",
+      "I accidentally stumbled upon LamaYield while looking for another tool but I am very glad I did!",
     handle: "@ Sam",
   },
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "What services does Softgent provide?",
+    question: "What services does LamaYield provide?",
     answer:
-      "We provide AI workflow automation, intelligent assistants, and strategic consulting to help businesses scale efficiently.",
+      "LamaYield provides AI workflow automation, AI assistants and copilots, AI consulting, and technology integration to help businesses work smarter and scale efficiently.",
   },
   {
-    question: "Do you implement AI and automation directly?",
+    question: "Do you build and implement AI solutions?",
     answer:
-      "We provide AI workflow automation, intelligent assistants, and strategic consulting to help businesses scale efficiently.",
+      "Yes. We design, develop, and integrate AI solutions tailored to your business needs, from intelligent assistants and automation to custom AI-powered applications.",
   },
   {
-    question: "How long does implementation typically take?",
+    question: "How long does an AI project typically take?",
     answer:
-      "Project timelines depend on complexity, but most AI systems are delivered within four to eight weeks.",
+      "Project timelines depend on the scope and complexity. Smaller solutions can be delivered quickly, while larger AI systems may require several weeks or longer.",
   },
   {
-    question: "How secure is my data?",
+    question: "How do you keep our data secure?",
     answer:
-      "Security is a top priority. Softgent uses enterprise-grade encryption, secure access controls, and compliance standards to ensure your data remains protected at all times.",
+      "We prioritize security throughout development by using secure architectures, controlled access, data protection practices, and appropriate security measures for each project.",
   },
   {
-    question: "How quickly can I get started?",
+    question: "How can we get started with LamaYield?",
     answer:
-      "You can get started in just a few minutes. With intuitive setup, pre-built templates, and seamless integrations, most teams launch their first workflow the same day.",
+      "Simply get in touch with our team and tell us about your idea, challenge, or business process. We will help identify the right AI or software solution and plan the next steps.",
   },
 ];
 
@@ -100,9 +99,9 @@ export const WHY_US = {
     {
       title: "Innovation as a Collective Mindset",
       body: "Quality in software development comes from truly understanding the client's niche, industry and specifics. In doing so, we strive to intentionally act with the client at core.",
-      image: "/img/why-us-1.png",
+      image: "/img/Lama/why-us-1.png",
     },
-    { title: "Customer Centricity", body: "", image: "/img/why-us-2.png" },
+    { title: "Customer Centricity", body: "", image: "/img/Lama/why-us-2.png" },
   ],
 };
 

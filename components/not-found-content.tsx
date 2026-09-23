@@ -7,7 +7,7 @@ export function NotFoundContent() {
     <section className="relative flex min-h-screen items-center overflow-hidden bg-ink pb-[120px] pt-[196px]">
       <DotPattern opacity={0.2} />
       <Image
-        src="/img/notfound-hero.png"
+        src="/img/Lama/hero-bg.png"
         alt=""
         fill
         priority

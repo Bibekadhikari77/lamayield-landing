@@ -17,22 +17,22 @@ const SERVICES = [
   {
     title: "Workflow Automation",
     body: "We design intelligent workflows that automate tasks and improve business efficiency across teams.",
-    image: "/img/service-automation.png",
+    image: "/img/Lama/service-automation.png",
   },
   {
     title: "AI Assistants & Copilots",
     body: "We build smart AI assistants that support teams and customers with fast responses.",
-    image: "/img/service-copilots.png",
+    image: "/img/Lama/service-copilots.png",
   },
   {
     title: "Business consulting",
     body: "We provide expert guidance to improve strategy, operations, and long-term business growth.",
-    image: "/img/service-consulting.png",
+    image: "/img/Lama/service-consulting.png",
   },
   {
     title: "AI Integration",
     body: "The tools you already use, made smarter. We connect AI directly into your stack.",
-    image: "/img/service-ai-tools.png",
+    image: "/img/Lama/service-ai-tools.png",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function ServicesPage() {
         label="Services"
         title="Comprehensive Innovative Software Solutions"
         lead="We specialize in providing innovative software solutions that empower businesses to streamline operations."
-        image="/img/services-hero.png"
+        image="/img/Lama/services-hero.png"
       />
 
       {/* ------------------------------------------------------ Services */}
@@ -109,7 +109,7 @@ export default function ServicesPage() {
           </div>
 
           <Image
-            src="/img/services-framework.png"
+            src="/img/Lama/services-framework.png"
             alt=""
             width={1280}
             height={1150}
