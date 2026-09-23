@@ -6,19 +6,16 @@ import { Eyebrow } from "@/components/eyebrow";
 import { Faq } from "@/components/faq";
 import { Globe } from "@/components/globe";
 import { HeroShader } from "@/components/hero-shader";
-import { Marquee, MarqueeVertical } from "@/components/marquee";
+import { MarqueeVertical } from "@/components/marquee";
 import { ScrollRevealText } from "@/components/scroll-reveal-text";
 import { ServicesScroll } from "@/components/services-scroll";
 import { SupportingCard } from "@/components/supporting-card";
 import { Footer } from "@/components/footer";
-import { PartnerCard } from "@/components/partner-card";
 import {
   FAQ_ITEMS,
   INDUSTRIES,
   METRICS,
-  PARTNER_LOGOS,
   SERVICE_CARDS,
-  TESTIMONIALS,
 } from "@/lib/content";
 
 const APPROACH = [

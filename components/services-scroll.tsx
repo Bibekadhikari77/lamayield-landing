@@ -6,6 +6,12 @@ import { DotPattern } from "./dot-pattern";
 
 export type ServiceCard = { title: string; image: string };
 
+// Resting rotation of each card in the pile, from the Framer reference.
+const CARD_TILTS = [4, -4, -12, -20];
+
+// Scroll distance each card gets to travel in; larger = slower.
+const SCROLL_PER_CARD = 1200;
+
 // The project's sticky "ServicesSection": the headline pins to the viewport
 // while four trigger blocks scroll past, dealing the service cards in one by one.
 export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
@@ -40,7 +46,7 @@ export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
   }, []);
 
   return (
-    <div ref={wrapRef} className="relative" style={{ height: `calc(100vh + ${cards.length * 700}px)` }}>
+    <div ref={wrapRef} className="relative" style={{ height: `calc(100vh + ${cards.length * SCROLL_PER_CARD}px)` }}>
       <section className="sticky top-0 flex h-screen items-center justify-center overflow-hidden bg-void">
         {/* Light effects behind the headline */}
         <div
@@ -61,17 +67,20 @@ export function ServicesScroll({ cards }: { cards: ServiceCard[] }) {
           Our Services
         </h2>
 
-        <div className="relative z-10 flex w-full items-center justify-center gap-4 px-4 lg:gap-6">
+        {/* The cards pile up in the centre, each landing on top at its own tilt. */}
+        <div className="relative z-10 aspect-[300/380] w-[min(300px,70vw)]">
           {cards.map((card, i) => {
-            const local = Math.min(1, Math.max(0, (progress - i * 0.2) / 0.28));
-            const tilt = (i - (cards.length - 1) / 2) * 3;
+            // Each card owns its own slice of the scroll and lands before the next moves.
+            const slice = 1 / cards.length;
+            const local = Math.min(1, Math.max(0, (progress - i * slice) / (slice * 0.85)));
+            const tilt = CARD_TILTS[i % CARD_TILTS.length];
             return (
               <article
                 key={card.title}
-                className="relative aspect-[300/380] w-[min(300px,22vw)] shrink-0 overflow-hidden bg-void ring-1 ring-line"
+                className="absolute inset-0 overflow-hidden bg-void ring-1 ring-line"
                 style={{
                   opacity: local,
-                  transform: `translateY(${(1 - local) * 140}px) scale(${0.92 + local * 0.08}) rotate(${tilt * local}deg)`,
+                  transform: `translateY(${(1 - local) * 110}vh) rotate(${tilt * local}deg)`,
                   transition: "opacity 120ms linear",
                 }}
               >

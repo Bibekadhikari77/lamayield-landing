@@ -7,7 +7,7 @@ export const NAV_LINKS = [
 
 export const LEGAL_LINKS = [
   { href: "/privacy-policy", label: "Privacy policy" },
-  { href: "/404", label: "404 Page" },
+  { href: "/terms-of-use", label: "Terms of use" },
 ] as const;
 
 export const SOCIAL_LINKS = [
