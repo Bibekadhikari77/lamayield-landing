@@ -101,19 +101,18 @@ export default function ServicesPage() {
       {/* ----------------------------------------------------- Framework */}
       <section className="relative overflow-hidden bg-ink py-[120px]">
         <div className="container-page relative z-10 flex flex-col gap-16">
-          {/* Centred like the footer CTA band */}
-          <div className="flex flex-col items-center gap-8 text-center">
-            <h2 className="text-h2 max-w-[760px] text-balance text-snow">
+          <div className="flex flex-col gap-8 lg:flex-row lg:gap-16">
+            <h2 className="text-h1 text-balance text-snow lg:w-[45%]">
               Transforming Businesses with Cutting&#8209;Edge Solutions
             </h2>
-            <div className="flex max-w-[680px] flex-col gap-4">
-              <p className="text-light text-mist">
+            <div className="flex flex-1 flex-col gap-5 lg:pt-2">
+              <p className="text-body-sm text-mist">
                 We bring deep expertise through a delivery approach built around your
                 business goals. Every engagement starts with understanding how you work,
                 then combines AI, automation and modern engineering to design solutions
                 that fit your processes and scale with you.
               </p>
-              <p className="text-light text-mist">
+              <p className="text-body-sm text-mist">
                 Our capabilities span AI assistants and workflow automation, custom
                 software and system integrations, cloud platforms and blockchain, along
                 with the security, implementation and ongoing support that keep your

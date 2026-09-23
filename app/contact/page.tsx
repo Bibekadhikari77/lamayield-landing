@@ -66,12 +66,9 @@ export default function ContactPage() {
               <div className="flex flex-col gap-4 border-t border-line pt-6">
                 <Image src="/img/icon-email.svg" alt="" width={28} height={28} className="size-7" />
                 <p className="text-body-sm text-dim">Email</p>
-                <a href="mailto:customer@framer.com" className="text-body text-snow transition-colors hover:text-accent">
-                  customer@framer.com
-                </a>
-                <a href="mailto:client@framer.com" className="text-body text-snow transition-colors hover:text-accent">
-                  client@framer.com
-                </a>
+                <a href="mailto:customer@gmail.com" className="text-body text-snow transition-colors hover:text-accent">
+              team@swinging-lama.de       
+         </a>
               </div>
             </div>
 

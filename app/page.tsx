@@ -112,7 +112,6 @@ export default function Home() {
 
           <div className="metrics-content relative z-10 flex flex-col gap-16">
             <div className="metrics-heading flex flex-col">
-              <Eyebrow>In number</Eyebrow>
               <ScrollRevealText
                 as="h2"
                 initialOpacity={0.4}
@@ -230,14 +229,14 @@ export default function Home() {
 </blockquote>
               <figcaption className="flex items-center gap-3">
                 <Image
-                  src="/img/industries-author.png"
+                  src="/img/Lama/Sebastian.avif"
                   alt=""
                   width={54}
                   height={54}
                   className="size-[54px] rounded-full object-cover"
                 />
                 <div className="flex flex-col">
-                  <span className="text-light text-snow">Sabestian</span>
+                  <span className="text-light text-snow">Sabestian Büttner</span>
                   <span className="text-body-sm text-dim">AI & Technology Partner</span>
                 </div>
               </figcaption>
@@ -348,7 +347,7 @@ export default function Home() {
           <div className="flex flex-col items-start justify-between gap-10 lg:flex-row">
             <div className="flex flex-col gap-2 lg:w-[42%]">
               <Eyebrow>Frequently asked question</Eyebrow>
-              <ScrollRevealText as="h2" className="text-h2 text-snow" text="Faqs" />
+              <ScrollRevealText as="h2" className="text-h2 text-snow" text="FAQs" />
             </div>
             <div className="w-full lg:w-[52%]">
               <Faq items={FAQ_ITEMS} />
