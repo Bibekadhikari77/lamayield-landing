@@ -40,6 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${clash.variable} ${inter.variable} ${schibsted.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-ink text-snow">

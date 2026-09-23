@@ -146,7 +146,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative h-[420px] flex-1 overflow-hidden lg:h-[744px]">
+            <div className="relative h-[420px] overflow-hidden lg:h-[744px] lg:flex-1">
               <Image
                 src="/img/Lama/bento-main.png"
                 alt="LamaYield delivery workspace"
@@ -238,7 +238,7 @@ export default function Home() {
             </figure>
           </div>
 
-          <div className="relative h-[527px] w-full flex-1 overflow-hidden">
+          <div className="relative h-[527px] w-full overflow-hidden lg:flex-1">
             <Image
               src="/img/industries-bg.png"
               alt=""
@@ -267,10 +267,10 @@ export default function Home() {
         <Image
           src="/img/Lama/about-lines.png"
           alt=""
-          width={1440}
-          height={402}
+          width={2170}
+          height={603}
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 top-[125px] z-0 w-full opacity-60"
+          className="pointer-events-none absolute inset-x-0 top-[125px] z-0 h-auto w-full opacity-60"
         />
         <div className="container-page relative z-10 flex flex-col gap-8">
           <div className="flex flex-col gap-8 lg:flex-row lg:gap-16">

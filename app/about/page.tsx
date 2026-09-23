@@ -60,10 +60,10 @@ export default function AboutPage() {
         <Image
           src="/img/Lama/about-lines.png"
           alt=""
-          width={1440}
-          height={402}
+          width={2170}
+          height={603}
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 top-0 z-0 w-full opacity-50"
+          className="pointer-events-none absolute inset-x-0 top-0 z-0 h-auto w-full opacity-50"
         />
         <div className="container-page relative z-10 flex flex-col gap-16">
           <div className="flex flex-col gap-8 lg:flex-row lg:gap-16">
