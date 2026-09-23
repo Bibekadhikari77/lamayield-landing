@@ -10,7 +10,7 @@ import { WhyChooseUs } from "@/components/why-choose-us";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "At LamaYield, we specialize in providing innovative software solutions and IT services.",
+    "LamaYield is a technology partner delivering AI solutions, custom software, cloud services, workflow automation and blockchain development for growing businesses.",
 };
 
 const HOW_IT_WORKS = [
@@ -51,7 +51,7 @@ export default function AboutPage() {
       <PageHero
         label="About us"
         title="Empowering Businesses Through Technology"
-        lead="At LamaYield, we specialize in providing innovative software solutions and IT services."
+        lead="LamaYield is a technology partner delivering AI solutions, custom software, cloud services, workflow automation and blockchain development for growing businesses."
         image="/img/about-hero.png"
       />
 
@@ -76,9 +76,10 @@ export default function AboutPage() {
               />
             </div>
             <p className="text-h4 flex-1 text-mist">
-              At LamaYield, we specialize in providing innovative software solutions that
-              empower businesses to streamline operations, enhance productivity, and
-              achieve their goals efficiently.
+              We start by understanding your goals, then design and build the right mix:
+              AI assistants and machine learning, cloud migration and infrastructure, system
+              integrations, process automation and secure IT support. Every solution is
+              shaped around how your business works, so it delivers results you can measure.
             </p>
           </div>
 
