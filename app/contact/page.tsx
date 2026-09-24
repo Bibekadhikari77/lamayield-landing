@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     "We're all ears! Talk to us about your needs, and we'll provide the best possible solution.",
 };
 
+const CALENDLY_EMBED_URL =
+  "https://calendly.com/sb-quantum-beyond/ersttermin-quantum-beyond-programme" +
+  "?hide_gdpr_banner=1&background_color=020202&text_color=ffffff&primary_color=6f9bef";
+
 const STEPS = [
   {
     title: "Identify",
@@ -97,6 +101,29 @@ export default function ContactPage() {
                 Send message
               </button>
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------------------------------------------------- Book a call */}
+      <section id="book" className="bg-void py-[120px]">
+        <div className="container-page flex flex-col gap-16">
+          <div className="flex flex-col gap-4">
+            <Eyebrow>Book a call</Eyebrow>
+            <ScrollRevealText
+              as="h2"
+              className="text-h2 max-w-[720px] text-snow"
+              text="Schedule a first meeting with our team"
+            />
+          </div>
+
+          <div className="overflow-hidden border border-line bg-ink">
+            <iframe
+              src={CALENDLY_EMBED_URL}
+              title="Book a meeting via Calendly"
+              loading="lazy"
+              className="block h-[1100px] w-full md:h-[760px]"
+            />
           </div>
         </div>
       </section>
