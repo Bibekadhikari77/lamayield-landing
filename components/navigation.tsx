@@ -28,7 +28,7 @@ export function Navigation() {
             : "border-transparent"
         }`}
       >
-        <Link href="/" aria-label="LamaYield home" className="text-snow">
+        <Link href="/" aria-label="LLamaYield home" className="text-snow">
           <Logo />
         </Link>
 

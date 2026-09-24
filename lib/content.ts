@@ -44,12 +44,12 @@ export const PARTNER_AUTHOR = { name: "Mike Green", role: "Director of Operation
 export const TESTIMONIALS = [
   {
     quote:
-      "LamaYield has been an amazing investment partner for me. Their investment management services are easy to use.",
+      "LLamaYield has been an amazing investment partner for me. Their investment management services are easy to use.",
     handle: "@ Yury",
   },
   {
     quote:
-      "I never realized how much money I was wasting on unnecessary expenses until I started using LamaYield.",
+      "I never realized how much money I was wasting on unnecessary expenses until I started using LLamaYield.",
     handle: "@Aryan",
   },
   {
@@ -58,16 +58,16 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "I accidentally stumbled upon LamaYield while looking for another tool but I am very glad I did!",
+      "I accidentally stumbled upon LLamaYield while looking for another tool but I am very glad I did!",
     handle: "@ Sam",
   },
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "What services does LamaYield provide?",
+    question: "What services does LLamaYield provide?",
     answer:
-      "LamaYield provides AI workflow automation, AI assistants and copilots, AI consulting, and technology integration to help businesses work smarter and scale efficiently.",
+      "LLamaYield provides AI workflow automation, AI assistants and copilots, AI consulting, and technology integration to help businesses work smarter and scale efficiently.",
   },
   {
     question: "Do you build and implement AI solutions?",
@@ -85,7 +85,7 @@ export const FAQ_ITEMS: FaqItem[] = [
       "We prioritize security throughout development by using secure architectures, controlled access, data protection practices, and appropriate security measures for each project.",
   },
   {
-    question: "How can we get started with LamaYield?",
+    question: "How can we get started with LLamaYield?",
     answer:
       "Simply get in touch with our team and tell us about your idea, challenge, or business process. We will help identify the right AI or software solution and plan the next steps.",
   },

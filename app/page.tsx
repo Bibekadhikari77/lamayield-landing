@@ -77,7 +77,7 @@ export default function Home() {
             <div className="flex flex-col items-start gap-2.5">
               <Eyebrow>Decade of industry experience</Eyebrow>
               <h1 className="text-display max-w-[778px] text-snow">
-                LamaYield leverages AI to create innovative, scalable, and high-quality software solutions.
+                LLamaYield leverages AI to create innovative, scalable, and high-quality software solutions.
               </h1>
             </div>
             <ButtonPrimary href="/about">Learn more</ButtonPrimary>
@@ -116,7 +116,7 @@ export default function Home() {
                 as="h2"
                 initialOpacity={0.4}
                 className="text-h1 text-snow"
-                text="LamaYield builds intelligent AI-powered solutions that help businesses innovate, automate, and grow."
+                text="LLamaYield builds intelligent AI-powered solutions that help businesses innovate, automate, and grow."
               />
             </div>
 
@@ -154,7 +154,7 @@ export default function Home() {
             <div className="relative h-[420px] overflow-hidden lg:h-[744px] lg:flex-1">
               <Image
                 src="/img/Lama/bento-main.png"
-                alt="LamaYield delivery workspace"
+                alt="LLamaYield delivery workspace"
                 fill
                 sizes="(max-width: 1024px) 100vw, 55vw"
                 className="object-cover"
@@ -223,7 +223,7 @@ export default function Home() {
 
             <figure className="flex flex-col gap-6 border-l border-hairline pl-9">
 <blockquote className="text-light max-w-[520px] text-mist">
-  &ldquo;Great technology starts with understanding what matters. LamaYield helps
+  &ldquo;Great technology starts with understanding what matters. LLamaYield helps
   turn ideas into intelligent solutions that create real impact, at the right
   time.&rdquo;
 </blockquote>
@@ -236,7 +236,7 @@ export default function Home() {
                   className="size-[54px] rounded-full object-cover"
                 />
                 <div className="flex flex-col">
-                  <span className="text-light text-snow">Sabestian Büttner</span>
+                  <span className="text-light text-snow">Sebastian Büttner</span>
                   <span className="text-body-sm text-dim">AI & Technology Partner</span>
                 </div>
               </figcaption>
@@ -289,7 +289,7 @@ export default function Home() {
                 Cutting-Edge Solutions
               </h2>
               <p className="text-h4 text-mist">
-                At LamaYield, we specialize in providing innovative software solutions that
+                At LLLamaYield, we specialize in providing innovative software solutions that
                 empower businesses to streamline operations, enhance productivity, and
                 achieve their goals efficiently. Discover how our solutions can transform
                 your business today.

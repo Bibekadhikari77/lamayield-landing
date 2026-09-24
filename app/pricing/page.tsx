@@ -10,7 +10,7 @@ import { ScrollRevealText } from "@/components/scroll-reveal-text";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "At LamaYield, we specialize in providing innovative software solutions and IT services.",
+    "At LLamaYield, we specialize in providing innovative software solutions and IT services.",
 };
 
 // Pricing is hidden for now: /pricing renders the 404 page. Set to true to bring it back
@@ -61,7 +61,7 @@ export default function PricingPage() {
       <PageHero
         label="Pricing"
         title="Straightforward Costing designed to grow"
-        lead="At LamaYield, we specialize in providing innovative software solutions and IT services."
+        lead="At LLamaYield, we specialize in providing innovative software solutions and IT services."
         image="/img/Lama/pricing-hero.png"
       />
 

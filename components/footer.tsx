@@ -22,7 +22,7 @@ export function Footer() {
            Build smarter. Move faster. Grow further.
           </h2>
           <p className="text-light max-w-[620px] text-mist">
-            LamaYield combines AI, automation, and modern software engineering to transform ambitious ideas into practical digital solutions.
+            LLamaYield combines AI, automation, and modern software engineering to transform ambitious ideas into practical digital solutions.
           </p>
           <ButtonPrimary href="/contact">Get in Touch</ButtonPrimary>
         </div>
@@ -30,7 +30,7 @@ export function Footer() {
         {/* Company line + link columns */}
         <div className="flex flex-col gap-14 border-t border-line py-16 lg:flex-row lg:justify-between">
           <div className="max-w-sm">
-            <Link href="/" aria-label="LamaYield home" className="text-snow">
+            <Link href="/" aria-label="LLamaYield home" className="text-snow">
               <Logo />
             </Link>
 
@@ -69,7 +69,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col-reverse items-start justify-between gap-4 border-t border-line py-8 sm:flex-row sm:items-center">
-          <p className="text-body-sm text-dim">©2026 LamaYield.</p>
+          <p className="text-body-sm text-dim">©2026 LLamaYield.</p>
           <p className="text-body-sm flex items-center gap-3 text-dim">
             <Link href="/privacy-policy" className="transition-colors hover:text-accent">
               Privacy policy

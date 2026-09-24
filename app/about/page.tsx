@@ -10,14 +10,14 @@ import { WhyChooseUs } from "@/components/why-choose-us";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "LamaYield is a technology partner delivering AI solutions, custom software, cloud services, workflow automation and blockchain development for growing businesses.",
+    "LLamaYield is a technology partner delivering AI solutions, custom software, cloud services, workflow automation and blockchain development for growing businesses.",
 };
 
 const HOW_IT_WORKS = [
   {
     no: "01.",
     title: "Efficiency",
-    body: "Designed for your team, see for yourself and manage your time with LamaYield.",
+    body: "Designed for your team, see for yourself and manage your time with LLamaYield.",
   },
   {
     no: "02.",
@@ -51,7 +51,7 @@ export default function AboutPage() {
       <PageHero
         label="About us"
         title="Empowering Businesses Through Technology"
-        lead="LamaYield is a technology partner delivering AI solutions, custom software, cloud services, workflow automation and blockchain development for growing businesses."
+        lead="LLamaYield is a technology partner delivering AI solutions, custom software, cloud services, workflow automation and blockchain development for growing businesses."
         image="/img/about-hero.png"
       />
 
