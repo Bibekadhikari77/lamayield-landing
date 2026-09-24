@@ -37,7 +37,7 @@ const HOW_IT_WORKS = [
 ];
 
 const TEAM = [
-  { name: "Sebastian Büttner", role: "CEO", image: "/img/Lama/Sebastian.avif" },
+  { name: "Sebastian Büttner", role: "Director", image: "/img/Lama/Sebastian.avif" },
   { name: "Khem Raj Regmi", role: "AI Solutions Architect", image: "/img/Lama/khem-raj-regmi.jpeg" },
 ];
 
