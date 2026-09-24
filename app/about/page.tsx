@@ -37,12 +37,8 @@ const HOW_IT_WORKS = [
 ];
 
 const TEAM = [
-  { name: "Evan Mercer", role: "AI Lead Engineer", image: "/img/team-1.png" },
-  { name: "Collins Taeed", role: "DevOps Engineer", image: "/img/team-2.png" },
-  { name: "Daniel Wu", role: "Chief Technology Officer", image: "/img/team-3.png" },
-  { name: "Jim Callies", role: "Full-Stack Developer", image: "/img/team-4.png" },
-  { name: "Daniel Whitmore", role: "Back-End Developer", image: "/img/team-5.png" },
-  { name: "Jack Will", role: "Technical Lead", image: "/img/team-6.png" },
+  { name: "Sebastian Büttner", role: "CEO", image: "/img/Lama/Sebastian.avif" },
+  { name: "Khem Raj Regmi", role: "AI Solutions Architect", image: "/img/Lama/khem-raj-regmi.jpeg" },
 ];
 
 export default function AboutPage() {
