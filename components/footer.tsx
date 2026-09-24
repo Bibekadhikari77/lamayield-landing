@@ -35,9 +35,7 @@ export function Footer() {
             </Link>
 
             <p className="text-body-sm mt-6 text-mist/70">
-              AI-powered software that helps businesses work smarter and grow faster. From
-              strategy and design to development, integration and ongoing support, we deliver
-              tailored solutions that fit the way you work and scale as you grow.
+              LlamaYield is part of the Quantum Beyond Innovation Network
             </p>
           </div>
 

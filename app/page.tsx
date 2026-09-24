@@ -75,7 +75,7 @@ export default function Home() {
         <div className="container-page relative z-10 flex items-end">
           <div className="flex flex-col items-start gap-12">
             <div className="flex flex-col items-start gap-2.5">
-              <Eyebrow>Decade of industry experience</Eyebrow>
+              <Eyebrow>A Decade of industry experience</Eyebrow>
               <h1 className="text-display max-w-[778px] text-snow">
                 LLamaYield leverages AI to create innovative, scalable, and high-quality software solutions.
               </h1>
