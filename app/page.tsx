@@ -237,7 +237,7 @@ export default function Home() {
                 />
                 <div className="flex flex-col">
                   <span className="text-light text-snow">Sebastian Büttner</span>
-                  <span className="text-body-sm text-dim">AI & Technology Partner</span>
+                  <span className="text-body-sm text-dim">Director</span>
                 </div>
               </figcaption>
             </figure>
