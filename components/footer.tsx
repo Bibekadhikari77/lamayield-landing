@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ButtonPrimary } from "./button-primary";
 import { DotPattern } from "./dot-pattern";
@@ -37,6 +38,14 @@ export function Footer() {
             <p className="text-body-sm mt-6 text-mist/70">
               LlamaYield is part of the Quantum Beyond Innovation Network
             </p>
+
+            <Image
+              src="/img/Lama/made-in-germany.png"
+              alt="Made in Germany"
+              width={223}
+              height={119}
+              className="mt-6 h-auto w-[150px]"
+            />
           </div>
 
           <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:gap-16">
