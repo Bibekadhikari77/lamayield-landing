@@ -39,6 +39,7 @@ const HOW_IT_WORKS = [
 const TEAM = [
   { name: "Sebastian Büttner", role: "Director", image: "/img/Lama/Sebastian.avif" },
   { name: "Khem Raj Regmi", role: "AI Solutions Architect", image: "/img/Lama/khem-raj-regmi.jpeg" },
+  { name: "Michael Geidel", role: "Business Developer", image: "/img/Lama/michael-geidel.jpeg" },
 ];
 
 export default function AboutPage() {
